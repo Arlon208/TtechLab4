@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoja de vida</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+    <header>
+      <!-- <div class="contenido"> -->
+
+      <img id="fotoHv" src="img/foto.jpeg" alt="fotoHv" />
+      <h1>Arturo Londoño Muñoz</h1>
+      <h5>Ingeniero en sistemas</h5>
+      <h5>arturolm2008@gmail.com</h5>
+      <a href="https://www.linkedin.com/in/arturo-londo%C3%B1o-807a321a4/"
+        ><img src="img/linkedin.png" alt="linkeind"
+      /></a>
+      <!-- </div> -->
+    </header>
+
+    <nav id="nav">
+      <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+      <ul>
+        <li>
+          <a id="acerca" href="#acerca">Acerca de mi</a>
+        </li>
+        <li><a id="experiencia" href="#experiencia">Experiencia laboral</a></li>
+        <li><a id="formacion" href="#formacion">Formacion Academica</a></li>
+        <li><a id="idiomas" href="#idiomas">Idiomas</a></li>
+        <li>
+          <a id="tecnicos" href="#conocimiento">Conocimientos Tecnicos</a>
+        </li>
+        <li id="contacto" style="float: right">
+          <a href="#contacto">Contactame</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="acerca">
+      <h2>Acerca de mi</h2>
+      <p>
+        Profesional en Ingeniería de Sistemas con experiencia en mantenimiento
+        preventivo y correctivo de hardware como impresoras, equipos de computo,
+        camara de circuito cerrado y soporte a diferentes tipos de ususario
+        tanto de forma presencial como remota, cuento con conocimientos en
+        desarrollo web y bases de datos, comprometido con la eficiencia
+        operativa y el cumplimiento de directrices organizacionales. Me destaco
+        por mi capacidad para trabajar en equipo, adaptabilidad y atención al
+        detalle
+      </p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiencia Laboral</h2>
+      <ul>
+        <li>
+          <b>Estibadores Nacionales</b> (Julio 2024 - Abril 2025)
+          <p>
+            Coordinador operativo. Responsable de los procesos relacionados con
+            la logistica y mantenimeinto de diferentes tipos de aji.
+          </p>
+        </li>
+        <li>
+          <b>Alcaldia municipal Riofrio(V)</b> (Noviembre 2021 - Ocutubre 2023)
+          <p>
+            Enlace Juntas Accion Comunal. Encargado de asesorar, implementar y
+            promover los procesos comunales a fin de dinamizar la participacion
+            ciudadana y mantener actualizados los documentos que abarquen las
+            entidades comunales.
+          </p>
+        </li>
+
+        <li>
+          <b>Microsotecit</b> (Enero 2019 - Junio 2024)
+          <p>
+            Tecnico en sistemas. Proporcione soporte tecnico en sitio,
+            realizando instalacion, mantenimiento y reparacion de diferentes
+            dispositivos como equipos de computo, impresoras y camaras, se
+            realizo capacitacion a usuarios finales en diferentes aplicativos y
+            ademas de ello realice actualizaciones al contenido de paginas web.
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="formacion">
+      <h2>Formacion Academica</h2>
+      <ol>
+        <li>
+          Bachiller Tecnico en telecomunicaciones. Institucion Educativa Tecnico
+          industrial C.S.L (2012)
+        </li>
+        <li>Ingenieria de sistemas. Univalle (2021)</li>
+        <li>Tecnologia Analisis y desarrollo de software. SENA (En Curso)</li>
+      </ol>
+    </section>
+    <section id="idiomas">
+      <h2>Idiomas</h2>
+      <table border="1">
+        <tr>
+          <th>Idioma</th>
+          <th>Nivel</th>
+        </tr>
+        <tr>
+          <td>Ingles</td>
+          <td>B2</td>
+        </tr>
+        <tr>
+          <td>Español</td>
+          <td>Nativo</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="conocimiento">
+      <h2>Conocimiento Tecnicos</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Tecnologia</th>
+            <th>Nivel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Intermedio</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Intermedio</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>Intermedio</td>
+          </tr>
+          <tr>
+            <td>Git</td>
+            <td>Intermedio</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="contacto">
+      <h2>Contáctame</h2>
+      <form id="contact-form">
+        <fieldset>
+          <legend>Información de contacto:</legend>
+
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+          <span id="name-error" class="error-message"></span>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <span id="email-error" class="error-message"></span>
+
+          <label for="phone">Teléfono:</label>
+          <input type="tel" id="phone" name="phone" required />
+          <span id="phone-error" class="error-message"></span>
+
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <span id="message-error" class="error-message"></span>
+
+          <br />
+          <input id="enviar-btn" type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,281 @@
+/*header {
+    position: relative;
+    height: 22vh;
+    background: url('img/fondo.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    width: 100%;
+
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.1);
+    /* oscurece ligeramente 
+    z-index: 0;
+}
+
+.contenido {
+  position: relative;
+   z-index: 1;
+  margin-top: auto;
+  margin-bottom: 5rem;
+}
+
+.contenido h1 {
+  font-size: 3rem;
+  margin: 0;
+  display: center;
+}
+*/
+
+body {
+  background-color: #e0f0ff; /* azul claro */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  background: url("img/fondo.jpg") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  margin-bottom: 0;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  display: center;
+}
+
+header h5 {
+  margin: 0;
+  display: center;
+}
+
+#fotoHv {
+  margin-top: 1rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 6px solid white;
+  object-fit: cover;
+}
+
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1a6ac5;
+  padding: 0.5rem;
+  border-radius: 0 0 10px 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a6ac5;
+  border-radius: 0 0 10px 10px;
+}
+
+nav ul li {
+  float: left;
+  border-right: 1px solid #bbb;
+}
+
+nav ul li:last-child {
+  border-right: none;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+nav ul li a:hover:not(.active) {
+  background-color: #111;
+}
+
+nav ul li a.active {
+  background-color: #ffffff;
+  color: #1a6ac5;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+.abrir-menu {
+  align-items: center;
+}
+@media screen and (max-width: 550px) {
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .abrir-menu {
+    color: #1c1c1c;
+  }
+
+  .cerrar-menu {
+    color: #ececec;
+  }
+
+  #nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1c;
+    padding: 1.5rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
+
+  #nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  #nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+
+  #nav ul li {
+    float: none;
+    border-right: none;
+
+    border-bottom: 1px solid #555;
+  }
+
+  #nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  #nav ul li a {
+    display: block;
+    color: #ececec;
+    text-align: right;
+    padding: 10px 15px;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  nav ul li a.active {
+    background-color: #1c1c1c;
+  }
+}
+
+section {
+  background-color: white;
+  margin: 2rem auto;
+  padding: 1.5rem 2rem;
+  max-width: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  border-bottom: 2px solid #1a6ac5;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #1a6ac5;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+  color: white;
+}
+
+td {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+th {
+  background-color: #1a6ac5;
+}
+#enviar-btn {
+  background-color: #1a6ac5;
+  border: none;
+  color: white;
+  padding: 15px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+.abrirMenu {
+  display: none;
+}
+
+form {
+  margin-top: 20px;
+}
+fieldset {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+label {
+  display: block;
+  margin-top: 10px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
